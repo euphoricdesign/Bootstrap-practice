@@ -1,20 +1,200 @@
+* {
+    outline: none;
+}
+
 body {
     font-family: 'Titillium Web', sans-serif;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
 }
 
+a:hover {
+    color: #434242;
+}
+
+.img {
+    width: 100%;
+    position: relative;
+    top: 50px;
+}
+
+
 header {
-    margin-top: 75px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #00A878;
+}
+
+.navbar .container .nav-link {
+    color: #434242;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.navbar .container .nav-link:hover {
+    color: #F3FCF0;
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+.navbar-brand {
+    color: #434242;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.navbar-brand span {
+    color: #F3FCF0;
+}
+
+.header-content-right .btn {
+    width: 200px;
+    padding: 20px 10px;
+    border: solid 3px #00A878;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.header-content-right .btn:hover {
+    background: #00A878;
+    color: white;
+    transition:all .7s ease;
+}
+
+.header-content-right h1 {
+    color: #434242;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.header-content-right h1 span {
+    color: #F3FCF0;
+}
+
+.header-content-right p {
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 #testimonial {
-    background: #f1f1f1;
-    padding: 50px 0 30px 0;
+    background: #909090;
+    padding: 70px 0;
     text-align: center;
-    margin-top: 40px;
 }
+
+
+.info-left img {
+    filter: grayscale(1);
+}
+
+.p1 {
+    font-size: 40px;
+}
+
+.p2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.p1{
+    color:#59C9A5;
+    font-weight: bolder;
+}
+
+.p3 {
+    font-size: 20px;
+}
+
+.info-right h2 {
+    color: #59C9A5;
+    font-weight: bolder;
+}
+
+.info-left h2 {
+    color: #59C9A5;
+    font-weight: bolder;
+}
+
+ul {
+    font-size: 20px;
+    color: #3f3f3f;
+}
+
+.form {
+    background: #434242;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.form-control {
+    padding: 8px;
+    background: #2c2c2c;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: white;
+    padding: 8px;
+}
+
+.form-control:focus {
+    border-color: #59C9A5;
+    background-color: #3f3f3f;
+}
+
+button {
+    width: 200px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    background: #00A878;
+    padding: 8px;
+    color: white;
+}
+
+button:hover {
+    background: transparent;
+    border-color: #00A878;
+    transition: all .5s ease;
+}
+
+
+
+
 
 footer {
-    background: url(../img/smartphones.png);
+    background: url(../img/pexels-photo-719399.jpeg);
+    background-size: cover;
+    background-position:center ;
 }
 
+@media screen and (max-width: 700px) {
+    header {
+        height: 100%;
+    }
+
+    .header-content-right {
+        padding: 60px 0;
+    }
+
+    .info-left .img {
+        top: 0;
+    }
+}
