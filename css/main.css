@@ -95,8 +95,16 @@ header {
 }
 
 
+
 .info-left img {
     filter: grayscale(1);
+}
+
+.img-left {
+    width: 250px;
+    top: 30px;
+    left: 100px;
+    position: relative;
 }
 
 .p1 {
@@ -196,5 +204,9 @@ footer {
 
     .info-left .img {
         top: 0;
+    }
+
+    .img-left {
+        display: none;
     }
 }
